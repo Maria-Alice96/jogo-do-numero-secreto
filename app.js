@@ -7,7 +7,7 @@
   Para simplificarmos o código acima vamos usar funções com parâmentros: */
 
 let listaDeNumeroSorteados = [];
-let limiteDaLista = 10;
+let limiteDaLista = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
