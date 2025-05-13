@@ -7,7 +7,7 @@
   Para simplificarmos o código acima vamos usar funções com parâmentros: */
 
 let listaDeNumeroSorteados = [];
-let limiteDaLista = 50;
+let limiteDaLista = 20;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -19,7 +19,7 @@ function exibirTextoNaTela(tag,texto){
 
 function exibirMensagemInicial() {
    exibirTextoNaTela("h1","Jogo do número Secreto!");
-   exibirTextoNaTela("p","Escolha um número entre 1 e 10:");
+   exibirTextoNaTela("p","Escolha um número entre 1 e 20:");
 }
 
 exibirMensagemInicial();
@@ -45,7 +45,7 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-   let numeroEscolhido = parseInt(Math.random()*10+1);
+   let numeroEscolhido = parseInt(Math.random()*20+1);
    let tamanhoDaLista = listaDeNumeroSorteados.length;
    
    if (tamanhoDaLista == limiteDaLista) {
